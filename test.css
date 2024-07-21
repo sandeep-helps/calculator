@@ -1,0 +1,124 @@
+*{
+    font-variant: small-caps;
+}
+
+body{
+    background-color: #000000;
+	font-family: Tahoma;
+    background-image: url("img.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+#display{
+    display: block;
+	margin: 15px auto;
+	height: 50px;
+	width: 200px;
+	padding: 0 10px;
+	border-radius: 4px;
+	border-top: 2px solid #C1C1C1;
+	border-right: 2px solid #C1C1C1;
+	border-bottom: 2px solid #FFF;
+	border-left: 2px solid #FFF;
+	background-color: #FFF;
+	box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px rgba(150, 150, 150, .2);
+	font-size: 28px;
+	color: #000000;
+	text-align: right;
+	font-weight: 400;
+    
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+}
+#container{
+    width: 235px;
+	padding: 8px 8px 20px 8px;
+	margin: 20px auto;
+	background-color: #ABABAB;
+	border-radius: 4px;
+	border-top: 2px solid #FFF;
+	border-right: 2px solid #FFF;
+	border-bottom: 2px solid #C1C1C1;
+	border-left: 2px solid #C1C1C1;
+	box-shadow: -3px 3px 7px rgba(0, 0, 0, .6), inset -100px 0px 100px rgba(255, 255, 255, .5);
+}
+.button_digits{
+    font-size: 20px;
+    margin: 2px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+	box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #DCDCDC;
+    border-top: 2px solid #e1ff00;
+	border-right: 2px solid #fb00ff;
+	border-bottom: 2px solid #ff0000;
+	border-left: 2px solid #00bbff;
+}
+.mathbtn{
+    font-size: 20px;
+    margin: 3px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    color: #fff;
+    background-color:  #000000;
+    text-shadow: -1px -1px 0px #44006F;
+    border-top: 2px solid #e1ff00;
+	border-right: 2px solid #fb00ff;
+	border-bottom: 2px solid #ff0000;
+	border-left: 2px solid #00bbff;
+    box-shadow: 0px 0px 2px #bd7575, inset 0px -20px 1px #000000;
+}
+
+/* ===================================================================================================== */
+#scroll{
+overflow: hidden;
+height: 50px;
+width: 100%;
+position: fixed;
+border: none;
+}
+#pgraph{
+    color: #FFF;
+/* animation properties */
+-moz-transform: translateX(100%);
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+
+-moz-animation: my-animation 15s linear infinite;
+-webkit-animation: my-animation 15s linear infinite;
+animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+from { -moz-transform: translateX(100%); }
+to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+from { -webkit-transform: translateX(100%); }
+to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+from {
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+to {
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+}
+
+/* ============================================================================================== */
